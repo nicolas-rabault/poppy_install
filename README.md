@@ -30,7 +30,7 @@ If you have any wifi or bluetooth USB dongle you can plug it.
     ```bash
       odroid@odroid:~$ curl -L https://raw.githubusercontent.com/MakingBot/webapp/master/poppy/setup.sh | sudo bash
     ```
-
+    Do not forget to set the root password "odroid"
 
 Let's start the installation :
 
