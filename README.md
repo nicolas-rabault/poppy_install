@@ -27,9 +27,9 @@ Now you have a clean and fresh installation, you can mount your memory card to y
 If you have any wifi or bluetooth USB dongle you can plug it.
 
 0. To easily configure your wireless connecion (and be prepared for webapp), you can use this script (optionnal):
-  ```bash
-  odroid@odroid:~$ curl -L https://raw.githubusercontent.com/MakingBot/webapp/master/poppy/setup.sh | sudo bash
-  ```
+    ```bash
+      odroid@odroid:~$ curl -L https://raw.githubusercontent.com/MakingBot/webapp/master/poppy/setup.sh | sudo bash
+    ```
 
 
 Let's start the installation :
