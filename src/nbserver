@@ -1,11 +1,11 @@
 #! /bin/sh -e
 
-DAEMON="ipython notebook" #ligne de commande du programme
-daemon_OPT="--profile=nbserver"  #argument à utiliser par le programme
-DAEMONUSER="poppy" #utilisateur du programme
-daemon_NAME="ipython notebook" #Nom du programme (doit être identique à l'exécutable)
+DAEMON="/home/poppy/.pyenv/shims/ipython" 
+daemon_OPT="notebook --profile=nbserver"
+DAEMONUSER="poppy" 
+daemon_NAME="nbserver" 
 
-PATH="/sbin:/bin:/usr/sbin:/usr/bin" #Ne pas toucher
+PATH="/sbin:/bin:/usr/sbin:/usr/bin"
 
 test -x $DAEMON || exit 0
 
