@@ -26,12 +26,7 @@ $ sudo dd bs=4M if=yourSystem.img | pv | sudo dd of=/dev/sdh # binary copy with 
 Now you have a clean and fresh installation, you can mount your memory card to your board, plug your ethernet connection, and power up.
 If you have any wifi or bluetooth USB dongle you can plug it.
 
-0. To easily configure your wireless connecion (and be prepared for webapp), you can use this script (optionnal):
-    ```bash
-      odroid@odroid:~$ curl -L https://raw.githubusercontent.com/MakingBot/webapp/master/poppy/setup.sh | sudo bash
-    ```
-    
-    Do not forget to set the root password "odroid" and reboot after that.
+
 
 Let's start the installation :
 
