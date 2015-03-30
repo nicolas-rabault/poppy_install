@@ -2,11 +2,13 @@
 
 # installating software
 sudo apt-get update
-sudo apt-get install hostapd dnsmas git
-
+sudo apt-get install hostapd dnsmasq git
 
 #configure interfaces
+wget https://raw.githubusercontent.com/Inmediats-Poppy/poppy_install/master/poppyAP/interfaces
 sudo mv interfaces /etc/network/interfaces 
+# Changing NetworxManager configuration
+wget https://raw.githubusercontent.com/Inmediats-Poppy/poppy_install/master/poppyAP/NetworkManager.conf
 sudo mv NetworManager.conf /etc/NetworManager/NetworManager.conf
 sudo nmcli nm wifi off
 sudo rfkill unblock wlan
@@ -14,7 +16,7 @@ sudo ifdown wlan2
 sudo ifup wlan2
 
 #configure hostapd
-wget hostpad.conf
+wget https://raw.githubusercontent.com/Inmediats-Poppy/poppy_install/master/poppyAP/hostpad.conf
 mv hostpad.conf /etc/hostapd/hostapd.conf
 
 # adafruit hack to make driver rtl871xdrv working with hostapd
@@ -27,11 +29,10 @@ sudo service hostapd start
 
 
 #configure dnsmasq
+wget https://raw.githubusercontent.com/Inmediats-Poppy/poppy_install/master/poppyAP/dnsmasq.conf
 sudo mv dnsmasq.conf /etc/dnsmasq.conf 
 sudo service dnsmasq
 
 # Starting daemons
 sudo /etc.init.d/hostapd start
 sudo /etc.init.d/dnmasq start
-
-
