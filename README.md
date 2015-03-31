@@ -26,6 +26,8 @@ $ sudo dd bs=4M if=yourSystem.img | pv | sudo dd of=/dev/sdh # binary copy with 
 Now you have a clean and fresh installation, you can mount your memory card to your board, plug your ethernet connection, and power up.
 If you have any wifi or bluetooth USB dongle you can plug it.
 
+
+
 Let's start the installation :
 
  1. Connecting you to the board over ssh.
@@ -37,7 +39,7 @@ Let's start the installation :
 
  2. Download and run poppy_setup.sh
     ```bash
-      odroid@odroid:~$ curl -L https://raw.githubusercontent.com/MakingBot/webapp/master/poppy/setup.sh | sudo bash
+      odroid@odroid:~$ curl -L https://raw.githubusercontent.com/nicolas-rabault/poppy_install/master/poppy_setup.sh | sudo bash
     ```
     Do not forget to set the root password "odroid"
 
@@ -50,7 +52,7 @@ Let's start the installation :
 ```
   A process will automatically take you terminal and print the installation output. You can leave it with `ctrl+c`. You can get back this print by reading the install_log file :
 ```bash
-poppy@poppy:~$ tail -f /home/odroid/install_log
+poppy@poppy:~$ tail -f /home/poppy/install_log
 ...
 ```
 If the last line is :
@@ -62,3 +64,11 @@ The installation is finish, you can restart your Poppy and start to play!
 ```bash
 poppy@poppy:~$ sudo reboot
 ```
+
+
+Optionnal : if you want to use remotely ipython notebook, you can download and run nbserver_configure.sh :
+
+```bash
+poppy@poppy:~$ curl -L https://raw.githubusercontent.com/Inmediats-Poppy/poppy_install/master/nbserver_configure.sh | sudo bash
+```
+
