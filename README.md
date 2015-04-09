@@ -65,10 +65,3 @@ The installation is finish, you can restart your Poppy and start to play!
 poppy@poppy:~$ sudo reboot
 ```
 
-
-Optionnal : if you want to use remotely ipython notebook, you can download and run nbserver_configure.sh :
-
-```bash
-poppy@poppy:~$ curl -L https://raw.githubusercontent.com/Inmediats-Poppy/poppy_install/master/nbserver_configure.sh | sudo bash
-```
-
