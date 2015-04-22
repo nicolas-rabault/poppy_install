@@ -26,6 +26,8 @@ $ sudo dd bs=4M if=yourSystem.img | pv | sudo dd of=/dev/sdh # binary copy with 
 Now you have a clean and fresh installation, you can mount your memory card to your board, plug your ethernet connection, and power up.
 If you have any wifi or bluetooth USB dongle you can plug it.
 
+
+
 Let's start the installation :
 
  1. Connecting you to the board over ssh.
@@ -62,3 +64,4 @@ The installation is finish, you can restart your Poppy and start to play!
 ```bash
 poppy@poppy:~$ sudo reboot
 ```
+
